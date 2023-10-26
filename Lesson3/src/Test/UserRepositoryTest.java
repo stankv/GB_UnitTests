@@ -55,4 +55,5 @@ public class UserRepositoryTest {
 
         assertThat(repository.autorizedUsers.size()).isEqualTo(2);
     }
+    
 }
