@@ -42,13 +42,13 @@ public class UserRepositoryTest {
         user1.auth("user1", "pass1");
         repository.autorizedUsers.add(user1);
         User user2 = new User("user2", "pass2", true);
-        user1.auth("user2", "pass2");
+        user2.auth("user2", "pass2");
         repository.autorizedUsers.add(user2);
         User user3 = new User("user3", "pass3", false);
-        user1.auth("user3", "pass3");
+        user3.auth("user3", "pass3");
         repository.autorizedUsers.add(user3);
         User user4 = new User("user4", "pass4", true);
-        user1.auth("user4", "pass4");
+        user4.auth("user4", "pass4");
         repository.autorizedUsers.add(user4);
 
         repository.logOutAllUsersIsNotAdmin();
